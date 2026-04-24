@@ -45,7 +45,7 @@ header {
 
 /* BANNER (AJUSTADO PARA MOSTRAR TOPO) */
 .banner {
-    background: url("/igreja.jpg") center/ cover no-repeat;
+    background: url("img.jpg") center/ cover no-repeat;
     height: 200px;
     display: flex;
     align-items: center;
