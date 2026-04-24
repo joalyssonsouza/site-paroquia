@@ -1,0 +1,233 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.insta {
+    color: white;
+    text-decoration: none;
+}
+
+/* BANNER (AJUSTADO PARA MOSTRAR TOPO) */
+.banner {
+    background: url("/igreja.jpg") center/ cover no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* SECTIONS */
+.section {
+    margin: 30px 15px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* HORÁRIOS */
+.horarios h2 {
+    margin-bottom: 15px;
+}
+
+.linha {
+    display: flex;
+    margin-bottom: 10px;
+    background: #e3f2fd;
+    border-radius: 8px;
+}
+
+.dia {
+    background: #0d47a1;
+    color: white;
+    padding: 10px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.conteudo {
+    padding: 10px;
+}
+
+/* PADRE */
+.padre-box {
+    background: #f3e5f5;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.icone-padre {
+    background: #e1bee7;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.icone-padre i {
+    font-size: 30px;
+    color: #8e24aa;
+}
+
+/* EVENTOS */
+.eventos {
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.evento-vazio {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.evento-vazio i {
+    font-size: 40px;
+    color: #2ecc71;
+}
+
+/* CONTATO (AGORA AZUL CLARO) */
+.contato {
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* VERSÍCULO (AGORA DOURADO CLARO) */
+.versiculo {
+    text-align: center;
+    font-style: italic;
+    background: #fff4cc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .linha {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* AJUSTE DA IMAGEM NO CELULAR */
+    .banner {
+        background-position: top;
+    }
+}
+
+.oracoes {
+    text-align: center;
+}
+
+.lista-oracoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.lista-oracoes button {
+    background: #0d47a1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lista-oracoes button:hover {
+    background: #1565c0;
+}
+
+#conteudo-oracao {
+    margin-top: 15px;
+    text-align: left;
+}
+
+#versiculo-texto {
+    transition: opacity 0.5s ease;
+}
+
+/* Efeito ao passar o mouse nos cards */
+.box {
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+h2 i {
+    margin-right: 8px;
+    color: #0d47a1;
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.animar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}

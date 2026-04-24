@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paróquia Nossa Senhora da Cabeça</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-church"></i>
+        Paróquia Nossa Senhora da Cabeça
+    </div>
+
+    <a href="https://www.instagram.com/pns_cabeca" class="insta" target="_blank">
+        <i class="fa-brands fa-instagram"></i> @pns_cabeca
+    </a>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+</section>
+
+<!-- HORÁRIOS -->
+<section class="section">
+    <div class="box horarios animar">
+
+        <h2>
+            <i class="fa-solid fa-clock"></i>
+            Programação Semanal
+        </h2>
+
+        <!-- DOM -->
+        <div class="linha">
+            <div class="dia">DOM</div>
+            <div class="conteudo">
+                07h - Igreja Nossa Senhora da Cabeça - Barrolândia <br>
+                09h - Igreja Santo Antônio - Porto Central <br>
+                10h30 - Igreja Nossa Senhora Aparecida - Embaúba <br>
+                18h - Igreja Nossa Senhora da Cabeça - Barrolândia
+            </div>
+        </div>
+
+        <!-- QUA -->
+        <div class="linha">
+            <div class="dia">QUA</div>
+            <div class="conteudo">
+                18h - Igreja Santo Antônio - Porto Central <br>
+                19h - Igreja Nossa Senhora da Cabeça - Barrolândia
+            </div>
+        </div>
+
+        <!-- QUI -->
+        <div class="linha">
+            <div class="dia">QUI</div>
+            <div class="conteudo">
+                18h30 - Adoração e Confissões - Barrolândia <br>
+                19h - Igreja Nossa Senhora da Cabeça - Barrolândia
+            </div>
+        </div>
+
+        <!-- SEX -->
+        <div class="linha">
+            <div class="dia">SEX</div>
+            <div class="conteudo">
+                06h - Igreja Nossa Senhora da Cabeça - Barrolândia
+            </div>
+        </div>
+
+        <!-- SAB -->
+        <div class="linha">
+            <div class="dia">SÁB</div>
+            <div class="conteudo">
+                16h - Igreja São Sebastião (1 e 3 sábado) - Petrolândia <br>
+                16h - Igreja São José Maria Escriva (2 sábado) - Piaçava <br>
+                16h - Igreja Santa Luzia (4 sábado) - Brejinho <br>
+                18h - Igreja São João Batista - Bairro Novo
+                <br>
+                19h - Grupo dos Jovens Local: Salão Paroquial
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PADRE -->
+<section class="section animar">
+    <div class="padre-box">
+        <div class="icone-padre">
+            <i class="fa-solid fa-church"></i>
+        </div>
+        <h3>Pe. Ramón Lima</h3>
+        <p>Pároco</p>
+    </div>
+</section>
+
+<!-- EVENTOS -->
+<section class="section animar">
+    <div class="eventos">
+        <h2><i class="fa-solid fa-calendar-days"></i> Próximos Eventos</h2>
+
+        <div class="evento-vazio">
+            <i class="fa-solid fa-calendar"></i>
+            <p><strong>Nenhum evento programado no momento.</strong></p>
+            <span>Fique atento às nossas redes sociais para futuras programações!</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section class="section contato animar">
+    <h2>Entre em Contato</h2>
+
+    <p><i class="fa-solid fa-phone"></i> (00) 00000-0000</p>
+    <p><i class="fa-brands fa-instagram"></i> @pns_cabeca</p>
+    <p><i class="fa-solid fa-location-dot"></i> Barrolândia - Belmonte/BA</p>
+</section>
+
+<!-- VERSÍCULO -->
+<section class="section box versiculo animar">
+    <p id="versiculo-texto">
+        <i class="fa-solid fa-book-bible"></i> Carregando...
+    </p>
+</section>
+
+<section class="section oracoes animar">
+    <h2><i class="fa-solid fa-hands-praying"></i> Orações</h2>
+
+    <div class="lista-oracoes">
+
+        <button onclick="mostrarOracao('nossaSenhoraCabeca')">⛪ Nossa Senhora da Cabeça</button>
+        <button onclick="mostrarOracao('paiNosso')">🙏 Pai Nosso</button>
+        <button onclick="mostrarOracao('aveMaria')">🌹 Ave Maria</button>
+        <button onclick="mostrarOracao('credo')">✝ Credo</button>
+        <button onclick="mostrarOracao('salveRainha')">👑 Salve Rainha</button>
+        <button onclick="mostrarOracao('santoAnjo')">🕊 Santo Anjo</button>
+
+    </div>
+
+    <div id="conteudo-oracao" class="box">
+        <p>Selecione uma oração acima</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 - Paróquia Nossa Senhora da Cabeça
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
