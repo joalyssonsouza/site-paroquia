@@ -114,3 +114,16 @@ window.addEventListener('scroll', animarScroll);
 
 // executar ao carregar
 animarScroll();
+
+// =========================
+// ABRIR / FECHAR ORAÇÃO
+// =========================
+function toggleOracao() {
+    const el = document.getElementById("oracaoCompleta");
+
+    if (el.style.display === "block") {
+        el.style.display = "none";
+    } else {
+        el.style.display = "block";
+    }
+}
