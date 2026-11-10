@@ -1,3 +1,4 @@
+
 /* RESET */
 * {
     margin: 0;
@@ -28,7 +29,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -43,9 +43,9 @@ header {
     text-decoration: none;
 }
 
-/* BANNER (AJUSTADO PARA MOSTRAR TOPO) */
+/* BANNER */
 .banner {
-    background: url("img.jpg") center/ cover no-repeat;
+    background: url("img.jpg") center/cover no-repeat;
     height: 200px;
     display: flex;
     align-items: center;
@@ -62,6 +62,7 @@ header {
     background: white;
     padding: 20px;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 /* HORÁRIOS */
@@ -74,18 +75,44 @@ header {
     margin-bottom: 10px;
     background: #e3f2fd;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .dia {
     background: #0d47a1;
     color: white;
-    padding: 10px;
-    min-width: 60px;
+    padding: 12px;
+    min-width: 85px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .conteudo {
-    padding: 10px;
+    padding: 12px;
+    flex: 1;
+    line-height: 1.6;
+}
+
+/* ATIVIDADES PASTORAIS */
+.atividades {
+    margin-top: 20px;
+}
+
+.atividades .linha {
+    background: #e3f2fd;
+}
+
+.observacao-programacao {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f5f5f5;
+    border-left: 4px solid #0d47a1;
+    border-radius: 5px;
+    line-height: 1.6;
+    color: #444;
 }
 
 /* PADRE */
@@ -129,14 +156,14 @@ header {
     color: #2ecc71;
 }
 
-/* CONTATO (AGORA AZUL CLARO) */
+/* CONTATO */
 .contato {
     background: #e3f2fd;
     padding: 20px;
     border-radius: 10px;
 }
 
-/* VERSÍCULO (AGORA DOURADO CLARO) */
+/* VERSÍCULO */
 .versiculo {
     text-align: center;
     font-style: italic;
@@ -154,23 +181,7 @@ footer {
     margin-top: 20px;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    .linha {
-        flex-direction: column;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* AJUSTE DA IMAGEM NO CELULAR */
-    .banner {
-        background-position: top;
-    }
-}
-
+/* ORAÇÕES */
 .oracoes {
     text-align: center;
 }
@@ -200,20 +211,22 @@ footer {
 #conteudo-oracao {
     margin-top: 15px;
     text-align: left;
+    line-height: 1.7;
+}
+
+#conteudo-oracao h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
 }
 
 #versiculo-texto {
     transition: opacity 0.5s ease;
 }
 
-/* Efeito ao passar o mouse nos cards */
-.box {
-    transition: 0.3s;
-}
-
+/* EFEITO NOS CARDS */
 .box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 h2 i {
@@ -221,6 +234,7 @@ h2 i {
     color: #0d47a1;
 }
 
+/* ANIMAÇÕES */
 .animar {
     opacity: 0;
     transform: translateY(20px);
@@ -232,10 +246,7 @@ h2 i {
     transform: translateY(0);
 }
 
-/* ========================= */
 /* ORAÇÃO DA PARÓQUIA */
-/* ========================= */
-
 .oracao-paroquia {
     background: #fff8e1;
     padding: 20px;
@@ -263,4 +274,31 @@ h2 i {
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .linha {
+        flex-direction: column;
+    }
+
+    .dia {
+        min-width: auto;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner {
+        background-position: top;
+    }
+
+    .lista-oracoes button {
+        flex: 1 1 120px;
+    }
 }
