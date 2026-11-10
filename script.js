@@ -101,13 +101,15 @@ function mostrarOracao(tipo) {
     };
 
     // Se clicar novamente na oração aberta, recolhe o conteúdo
-    if (oracaoAberta === tipo) {
-        conteudo.innerHTML = "<p>Selecione uma oração acima.</p>";
-        oracaoAberta = null;
-        return;
+   if (oracaoAberta === tipo) {
+    conteudo.innerHTML = "";
+    conteudo.style.display = "none";
+    oracaoAberta = null;
+    return;
     }
 
     // Abre a oração selecionada
+    conteudo.style.display = "block";
     conteudo.innerHTML = oracoes[tipo] || "<p>Oração não encontrada.</p>";
     oracaoAberta = tipo;
 }
